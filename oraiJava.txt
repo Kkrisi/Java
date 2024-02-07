@@ -1,0 +1,34 @@
+
+package elemiprogtetelek;
+
+
+
+public class ElemiProgTetelek {
+
+   
+    public static void main(String[] args) {
+        
+        int n = -1;
+        while (n < 0) {
+            //n - int(input("N: "))
+            n = 0;
+        }
+        int ossz = 0;
+        for (int i=0; i<=n+1; i++) {
+            ossz += 1;
+        }
+        System.out.printf("Az első %d db szám összege: %d\n", n, ossz);
+        
+        
+        
+        
+        
+        int db = 0;
+        for (int i=10; i<100; i++) {
+            if (i % 2 == 0){
+                db++;
+            }
+        }
+        System.out.printf("Kétjegyű párosak száma: %d\n",db);
+    }
+}
