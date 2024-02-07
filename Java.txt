@@ -1,0 +1,66 @@
+
+package elemiprogtetelek;
+
+import java.util.Scanner;
+
+
+
+public class ElemiProgTetelek {
+
+    static Scanner sc = new Scanner(System.in);
+    
+    public static void main(String[] args) {
+        
+        //String s = sc.nextLine();
+        //System.out.println("s = " + s * 3);
+        
+        
+        
+        
+        int n = -1;
+        while (n < 0) {
+            //n - int(input("N: "))
+            System.out.println("szám: ");
+            n = sc.nextInt();
+        }
+        int ossz = 0;
+        for (int i=0; i<=n+1; i++) {
+            ossz += 1;
+        }
+        System.out.printf("Az első %d db szám összege: %d\n", n, ossz);
+        
+        
+        
+        
+        
+        int db = 0;
+        for (int i=10; i<100; i++) {
+            if (i % 2 == 0){
+                db++;
+            }
+        }
+        System.out.printf("Kétjegyű párosak száma: %d\n",db);
+        
+        
+        
+        
+        
+        
+        
+        final int VEGE = 0;
+        db = 0;
+        int min = Integer.MAX_VALUE;
+        int szam = 0;
+        System.out.println("-ra kilép: ");
+        while((szam = sc.nextInt()) != VEGE) {
+            if (szam < min) {
+                min = szam;
+            }
+            db++;
+        }
+         
+        System.out.printf("%d szambol, a legkisebb: %d\n",db, min);
+    }
+}
+    
+
