@@ -1,0 +1,52 @@
+
+
+/* Kérj be 2 szöveget, majd írasd ki egymás után (pl. vezetéknév keresztnévvel)! */
+        
+String csaladNev;
+String keresztNev;
+
+Scanner myObject = new Scanner(System.in);
+System.out.println("Kérem a családneved: ");
+csaladNev = myObject.nextLine();
+
+System.out.println("Keresztnév: ");
+keresztNev = myObject.nextLine();
+
+System.out.println("Teljes neve: " + csaladNev + keresztNev);
+
+
+
+
+
+/* Kérd be a nevedet és tárold el, majd írd ki csupa nagybetűvel! */
+
+String karakter;
+
+Scanner myObj = new Scanner(System.in);
+System.out.println("Kérem a kedvenc filmkaraktered: ");
+karakter = myObj.nextLine();
+
+System.out.println("Váalsztott karaktered: "  + karakter.toUpperCase());
+
+
+
+
+
+/* Írd ki betűnként egymás alá az első három betűt! */
+
+String karakter;
+
+Scanner myObj = new Scanner(System.in);
+System.out.println("Kérem a kedvenc filmkaraktered: ");
+karakter = myObj.nextLine();
+
+for(int i = 0; i < 3; i++){
+    System.out.println(karakter.charAt(i));
+
+
+
+
+
+
+
+
