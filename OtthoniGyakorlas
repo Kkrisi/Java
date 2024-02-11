@@ -48,5 +48,58 @@ for(int i = 0; i < 3; i++){
 
 
 
+/* Írd ki, található-e benne ’n’ betű! */
+
+String szerelmedNeve;
+int szamlalo = 0;
+boolean van = false;
+
+Scanner myObj = new Scanner(System.in);
+System.out.println("Első szerelmed neve: ");
+szerelmedNeve = myObj.nextLine();
+
+for(int i = 0; i < szerelmedNeve.length(); i++){
+        if(szerelmedNeve.charAt(i) == 'n'){
+                szamlalo++;
+                van = true;
+        }
+}
+if(van){
+        System.out.println("Az első szerelmed nevében " + szamlalo + " db 'n' betű volt");
+} else {
+        System.out.println("Nem volt az első szerelmed nevében 'n' betű");
+}
+
+
+
+
+
+
+/* Írd ki csak a vezetékneved! */
+       
+String nev;
+String[] nevLista;
+
+Scanner myObj = new Scanner(System.in);
+System.out.println("Kedvenc testrész és kedvenc jármű");
+nev = myObj.nextLine();
+
+nevLista = nev.split(" ");
+
+if (nevLista.length > 0) {
+    System.out.println("First word: " + nevLista[0]);
+} else {
+    System.out.println("No words found.");
+}
+
+
+
+
+
+
+
+
+
+
 
 
