@@ -112,7 +112,7 @@ public class Amoba {
         String elso;
         
         Scanner myObj = new Scanner(System.in);
-        System.out.println("O vagy X legyen az első?");
+        System.out.print("O vagy X legyen az első?");
         elso = myObj.nextLine();
         System.out.println("\nAmőba négyzetünk: ");
         
