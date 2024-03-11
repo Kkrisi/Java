@@ -1,0 +1,18 @@
+static Scanner sc = new Scanner(System.in);
+    static Random rnd = new Random();
+    
+    public static void main(String[] args) {
+        
+        System.out.println("Melyikkel akarsz kezdeni: x/o");
+        String kezdoJel = sc.nextLine();
+        
+        System.out.printf("\n%s",kezdoJel);
+        for (int i = 1; i < 9; i++) {
+            String alak = rnd.nextInt(2) > 0.5 ? "x" : "o";
+            if (i % 3 == 0) {
+                System.out.println("");
+            }
+            System.out.print(alak);
+        }
+        System.out.println("");
+    }
