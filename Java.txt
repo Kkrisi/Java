@@ -61,6 +61,53 @@ public class MetodusFeladat1 {
 
 
 
+2024:03:13
+
+package feladat.oraifeladatok;
+
+
+
+public class MetodusokGyak {
+    
+    public static void main(String[] args) {
+        int osszeg = Osszegzes(2, Osszegzes(3,4));
+        double gyok = Gyokvonas(osszeg);
+        String kimenet = "%d gyöke: %.4f\n".formatted(osszeg, gyok);
+        konzolraIr(kimenet);
+    }
+        
+
+    
+    private static int Osszegzes(int[] tomb){
+        int osszeg = 0;
+        for (int i = 0; i < tomb.length; i++) {
+            osszeg += tomb[i];
+        }
+        return osszeg;
+    }
+    
+    private static int Osszegzes(int x, int y){
+        //return x + y;
+        
+        //int[] tomb = {x,y};
+        //return Osszegzes(tomb);
+        
+        return Osszegzes(new int[] {x,y});
+    }
+    
+    private static double Gyokvonas(int eredmeny){
+        return Math.sqrt(eredmeny);
+    }
+    
+    private static void konzolraIr(String kimenet){
+        System.out.print(kimenet);
+    }
+}
+
+
+
+
+
 
 
 
