@@ -1,3 +1,101 @@
+
+
+package orai.gyakorlas;
+
+
+public class Gyakorlas {
+
+    public static void main(String[] args) {
+        matrixOsszeadas();
+    }
+    
+    
+    private static void matrixOsszeadas(){
+        int[][] matrixA = feltolt(5, 8);
+        konzolraKiIr("\'A\' mátrix:",matrixA);
+        int[][] matrixB = feltolt(5, 8);
+        konzolraKiIr("\'B\' mátrix:",matrixB);
+        
+        int[][] matrixC = OsszeadMatrix(matrixA, matrixB);
+        konzolraKiIr("Közös matrix: ", matrixC);
+    }
+    
+    private static int[][] feltolt(int sor, int oszlop){
+        int[][] matrix = new int[sor][oszlop];
+        int also = -15, felso = 25;
+        int db = felso - also + 1;
+        for (int i = 0; i < sor; i++) {
+            for (int j = 0; j < oszlop; j++) {
+                matrix[i][j] = (int)(Math.random()*db)+also;
+            }
+        }
+        return matrix;
+    }
+    
+    
+    
+    private static int[][] OsszeadMatrix(int[][] matrixA, int[][] matrixB){
+        int sor = matrixA.length;
+        int oszlop = matrixA[0].length;
+        int[][] matrixC = new int[sor][oszlop];
+        
+        for (int i = 0; i < sor; i++) {
+            for (int j = 0; j < oszlop; j++) {
+                matrixC[i][j] = matrixA[i][j] + matrixB[i][j];
+            }
+        }
+        
+        return matrixC; 
+    }
+    
+    
+    
+    private static void konzolraKiIr(String szoveg, int[][] matrix){
+        int sor = matrix.length;
+        int oszlop = matrix[0].length;
+        System.out.println(szoveg);
+        for (int i = 0; i < sor; i++) {
+            for (int j = 0; j < oszlop; j++) {
+                System.out.printf("%4d", matrix[i][j]);
+            }
+            System.out.println("");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 static Scanner sc = new Scanner(System.in);
     static Random rnd = new Random();
     
