@@ -1,3 +1,95 @@
+DOLGOZAT: 2024:03:2:
+
+package orai.gyakorlas;
+
+
+public class KadarKristof {
+    
+    
+    // Elso feladat
+    public static void main(String[] args) {
+        nehanyRokaRudi();
+    }
+    
+    
+    // Masodik feladat
+    private static void nehanyRokaRudi(){
+        egyRokaRudiKonzolon();
+        tobbRokaRudiKonzolon();
+    }
+    
+    
+    //Harmadik feladat
+    private static void konzolraIr(String szoveg){
+        System.out.print(szoveg);
+    }
+    
+    
+    //Negyedik feladat
+    private static String rokaRudi(){
+        String szo = "RókaRudi";
+        return szo;
+    }
+    
+    
+    //Otodik feladat
+    private static int rokaRudi(int szam){
+        return rokaRudi(szam);
+    }
+    
+    
+    //Hatodik feladat
+    private static void egyRokaRudiKonzolon(){
+        konzolraIr(rokaRudi());
+        System.out.println("");
+    }
+    
+    
+    //Hetedik feladat
+    private static void tobbRokaRudiKonzolon(){
+        konzolraIr(rokaRudi(7));
+    }
+    
+    
+    //Nyolcadik feladat
+    private static int rokaRudi(int[] tomb){
+        int osszeg = 0;
+        for (int i = 0; i < tomb.length; i++) {
+            osszeg += tomb[i];
+        }
+        return osszeg;
+    }
+    
+    
+    //Kilencedik feladat
+    private static int rokaRudi(int db, String sep){
+        return rokaRudi(db, sep);
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 package orai.gyakorlas;
